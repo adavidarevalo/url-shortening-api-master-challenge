@@ -1,0 +1,14 @@
+{
+  "name": "url-shortening-api-master-challenge",
+  "version": "1.0.0",
+  "description": "Practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Practice"
+  ],
+  "author": "David Arevalo <davidarevaloc20@gmail.com>",
+  "license": "MIT"
+}

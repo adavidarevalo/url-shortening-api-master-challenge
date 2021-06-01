@@ -1,0 +1,153 @@
+$clr-gray2: #F0F1F6;
+main{
+    @extend .font;
+    .main-fistPart{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        img{
+            width: 100%;
+            max-width: 600px;
+            margin-block: 25px;
+        }
+        h1{
+            font-size: 2.1rem;
+        }
+        p{
+            margin-top: 25px;
+            font-size: 1rem;
+            color: $clr-gray;
+            line-height: 23px;
+        }
+        button{
+            background: $clr-skyBlue;
+            color: $clr-white;
+            border:none;
+            width: 150px;
+            font-size: 1rem;
+            padding: 10px;
+            border-radius: 15px;
+            margin-top: 25px;
+            cursor: pointer;
+        }
+    }
+}
+//input Shorten it
+.main-shorten{
+    width: 80%;
+    min-height: 200px;
+    height: auto;
+    margin: 0 auto;
+    max-width: 1005px;
+    .main-shorten_container{
+        margin-top: 25px;
+        background: $clr-purple;
+        border-radius: 10px;
+        div{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 15px;
+            background: url(./source/images/bg-boost-mobile.svg);
+            background-size: cover;
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
+        input{
+            border: none;
+            outline: none;
+            font-size: 1rem;
+            padding: 8px 10px;
+            width:100%;
+            max-width: 500px;
+        }
+        button{
+            margin-top: 10px;
+            background: $clr-skyBlue;
+            border: none;
+            font-size: 1.2rem;
+            padding: 8px 10px;
+            border: none;
+            border-radius: 5px;
+            color: $clr-white;
+            width:100%;
+            max-width: 250px;
+            cursor: pointer;
+        } 
+    }
+}
+}
+//Advanced Statistic
+.main-statics{
+    padding: 50px 0px 25px 0px;
+    background: $clr-gray2;
+    text-align: center;
+    h2{
+        font-size: 1.6rem;
+        margin-bottom: 25px;
+    }
+    p{
+        font-size: 1rem;
+        padding-inline: 10px;
+        line-height: 25px;
+        color: $clr-gray;
+    }
+    .main-statics_cards{
+        margin-top: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        div{
+            margin: 25px 15px;
+            width: 80%;
+            max-width: 450px;
+            background: $clr-white;
+            padding: 0px 15px 25px 15px;
+            border-radius: 10px;
+            img{
+                background: $clr-purple;
+                padding: 10px;
+                border-radius: 50px;
+                position: relative;
+                top: -25px;
+            }
+            h3{
+                font-size: 1.4rem;
+                margin-bottom: 20px;
+            }
+            p{
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+//boots your links today
+.main-boots{
+    background: $clr-purple;
+    width: 100%;
+    height: 30vh;
+    div{
+        background: url(./source/images/bg-boost-mobile.svg);
+        background-size: cover;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h4{
+            color: $clr-white;
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+        }
+        button{
+            background: $clr-skyBlue;
+            color: $clr-white;
+            border: none;
+            font-size: 1.3rem;
+            padding: 10px 10px;
+            width: 50%;
+            max-width:350px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+    }
+}
