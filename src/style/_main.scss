@@ -1,4 +1,8 @@
-$clr-gray2: #F0F1F6;
+.buttonStyleClass{
+  background:$clr-purple;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+}
 main{
     @extend .font;
     .section-Principal{
@@ -37,6 +41,12 @@ main{
             border-radius: 15px;
             margin-top: 25px;
             cursor: pointer;
+        }
+        button:hover{
+          @extend .buttonStyleClass;
+        }
+        button:active{
+          @extend .buttonStyleClass;
         }
     }
 }
@@ -81,6 +91,12 @@ main{
             max-width: 250px;
             cursor: pointer;
         } 
+        button:hover{
+          @extend .buttonStyleClass;
+        }
+        button:active{
+          @extend .buttonStyleClass;
+        }
     }
 }
 }
@@ -157,5 +173,19 @@ main{
             margin-top: 25px;
             cursor: pointer;
         }
+        button:hover{
+          @extend .buttonStyleClass;
+        }
+        button:active{
+          @extend .buttonStyleClass;
+        }
     }
+}
+.main-button_url{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  .button-loader {
+    width: 40px;
+  }
 }

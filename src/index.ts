@@ -9,6 +9,8 @@ menuButton.addEventListener("click", ()=>{
 const mainInputUrl: any = document.querySelector("#mainInputUrl")
 const mainButtonUrl: Element = document.querySelector("#mainButtonUrl")
 const Api: string= "https://api.shrtco.de/v2/shorten?url="
+const mainShortenResult: Element = document.querySelector("#mainShortenResult")
+let buttonLoader: Element = document.querySelector("#buttonLoader")
 
 mainButtonUrl.addEventListener("click", ()=>{
   if(mainInputUrl.value == ""){
@@ -20,16 +22,29 @@ mainButtonUrl.addEventListener("click", ()=>{
 
 function checkUrl(url:string | any) {
   if(url.includes(".")){
-    ApiFetch("https://api.shrtco.de/v2/shorten?url=", mainInputUrl.value)
+    const makeApi: string = `${Api}${url}`
+    urlFetch(makeApi);
+    buttonLoader.innerHTML=`
+    <img class="button-loader" src="https://acegif.com/wp-content/uploads/loading-11.gif" alt="loader git">
+    `
   } else {
     console.log("This Url is not Valid")
   }
 }
 
-function ApiFetch(api: string, complement: string|any) {
-  fetch(`${api}+${complement}`)
+function urlFetch(url:string) {
+  fetch(url)
     .then(response => response.json())
-    console.log(response)
-    .catch(error => console.log(error.message)))
+    .then(data => templateResult(data))
+    .catch(err => console.log("Error"))
 }
 
+function templateResult(data: object) {
+  console.log(data)
+  let infoDiv=document.createElement("div")
+  let infoP= document.createElement("p")
+  infoP.innerText= `${data}`
+  infoDiv.appendChild(infoP)
+  mainShortenResult.appendChild(infoDiv)
+  buttonLoader.innerHTML=``
+}
