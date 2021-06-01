@@ -48,6 +48,7 @@ header nav .nav-menu {
   border-radius: 20px;
   position: absolute;
   top: 70px;
+  max-width: 400px;
 }
 header nav .nav-menu div {
   display: -webkit-box;
@@ -71,6 +72,8 @@ header nav .nav-menu div a {
 header nav .nav-menu .nav-menu_login {
   padding-top: 20px;
   border-top: 1px solid #fff;
+  max-width: 260px;
+  margin: 0 auto;
 }
 header nav .nav-menu .nav-menu_login .nav-menu_SingUp {
   background: #2BD1D1;
@@ -284,7 +287,7 @@ main .main-fistPart button {
           align-items: center;
 }
 .main-button_url .button-loader {
-  width: 50px;
+  width: 40px;
 }
 
 footer {
@@ -383,5 +386,68 @@ footer .footer-cards_container div a:active {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+@media (min-width: 800px) {
+  header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header nav .nav-main_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  header nav .nav-main_menu i {
+    display: none;
+  }
+  header nav .nav-main_menu img {
+    max-height: 25px;
+    margin-top: 11.3px;
+  }
+  header nav .nav-menuContainer {
+    margin-left: 15px;
+  }
+  header nav .nav-menu {
+    background: none;
+    padding: 0px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: initial;
+    max-width: 100%;
+  }
+  header nav .nav-menu div {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  header nav .nav-menu div a {
+    margin-bottom: 0px;
+    margin-inline: 10px;
+    color: #000;
+  }
+  header nav .nav-menu .nav-menu_login {
+    padding-top: 0px;
+    border-top: none;
+    max-width: 100%;
+    margin: 0;
+  }
+  header nav .nav-menu .nav-menu_login .nav-menu_SingUp {
+    color: #fff;
+  }
+
+  .displayNone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
