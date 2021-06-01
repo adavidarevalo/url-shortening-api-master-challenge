@@ -10,5 +10,8 @@
     "Practice"
   ],
   "author": "David Arevalo <davidarevaloc20@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^4.3.2"
+  }
 }

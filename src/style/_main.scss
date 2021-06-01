@@ -1,10 +1,18 @@
 $clr-gray2: #F0F1F6;
 main{
     @extend .font;
+    .section-Principal{
+      height:100%;
+      max-height: auto;
+    }
     .main-fistPart{
         width: 90%;
         margin: 0 auto;
         text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
         img{
             width: 100%;
             max-width: 600px;
@@ -24,7 +32,7 @@ main{
             color: $clr-white;
             border:none;
             width: 150px;
-            font-size: 1rem;
+            font-size: 1.3rem;
             padding: 10px;
             border-radius: 15px;
             margin-top: 25px;
@@ -40,7 +48,7 @@ main{
     margin: 0 auto;
     max-width: 1005px;
     .main-shorten_container{
-        margin-top: 25px;
+        margin-top: 80px;
         background: $clr-purple;
         border-radius: 10px;
         div{
@@ -141,12 +149,12 @@ main{
         button{
             background: $clr-skyBlue;
             color: $clr-white;
-            border: none;
+            border:none;
+            width: 150px;
             font-size: 1.3rem;
-            padding: 10px 10px;
-            width: 50%;
-            max-width:350px;
-            border-radius: 20px;
+            padding: 10px;
+            border-radius: 15px;
+            margin-top: 25px;
             cursor: pointer;
         }
     }

@@ -10,3 +10,14 @@
       }
   }
 }
+@media (min-width: 1355px){
+  body{
+    .section-Principal{
+      height: 93vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
