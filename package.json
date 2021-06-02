@@ -4,7 +4,9 @@
   "description": "Practice",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "dev": "webpack --mode deveplo"
   },
   "keywords": [
     "Practice"
@@ -13,5 +15,13 @@
   "license": "MIT",
   "dependencies": {
     "typescript": "^4.3.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/plugin-transform-runtime": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0"
   }
 }

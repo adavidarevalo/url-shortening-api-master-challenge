@@ -87,7 +87,7 @@ header nav .nav-menu .nav-menu_login .nav-menu_SingUp {
   display: none;
 }
 
-.buttonStyleClass, .main-boots div button:active, .main-boots div button:hover, .main-shorten .main-shorten_container div button:active, .main-shorten .main-shorten_container div button:hover, main .main-fistPart button:active, main .main-fistPart button:hover {
+.buttonStyleClass, .main-url_container div button:hover, .main-boots div button:active, .main-boots div button:hover, .main-shorten .main-shorten_container div button:active, .main-shorten .main-shorten_container div button:hover, main .main-fistPart button:active, main .main-fistPart button:hover {
   background: #3A3053;
   -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
@@ -289,7 +289,57 @@ main .main-fistPart button {
 .main-button_url .button-loader {
   width: 40px;
 }
+.main-button_url .button-loader span {
+  padding-top: 2px;
+}
 
+.main-url_container {
+  background: #fff;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-block: 10px;
+  border-radius: 5px;
+  border: 1px solid #777;
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 15px 30px;
+}
+.main-url_container .url-container_result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main-url_container .origin-Url {
+  width: 60%;
+}
+.main-url_container div a {
+  text-decoration: none;
+  color: #2BD1D1;
+}
+.main-url_container div a:hover {
+  color: #000;
+}
+.main-url_container div button {
+  background: #2BD1D1;
+  color: #fff;
+  border: none;
+  width: 130px;
+  font-size: 1.3rem;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-left: 15px;
+}
 footer {
   background: #323232;
   padding-top: 50px;
@@ -372,7 +422,8 @@ footer .footer-cards_container div a:active {
 }
 @media (min-width: 1355px) {
   body .section-Principal {
-    height: 93vh;
+    min-height: 93vh;
+    height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -435,6 +486,9 @@ footer .footer-cards_container div a:active {
     margin-inline: 10px;
     color: #000;
   }
+  header nav .nav-menu div a:hover {
+    color: #2BD1D1;
+  }
   header nav .nav-menu .nav-menu_login {
     padding-top: 0px;
     border-top: none;
@@ -443,6 +497,11 @@ footer .footer-cards_container div a:active {
   }
   header nav .nav-menu .nav-menu_login .nav-menu_SingUp {
     color: #fff;
+  }
+  header nav .nav-menu .nav-menu_login .nav-menu_SingUp:hover {
+    background: #3A3053;
+    -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   }
 
   .displayNone {

@@ -187,5 +187,51 @@ main{
   align-items: center;
   .button-loader {
     width: 40px;
+    span{
+      padding-top: 2px;
+    }
+  }
+}
+//mainUrl 
+.main-url_container{
+  background: $clr-white;
+  height: auto;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  margin-block: 10px;
+  border-radius: 5px;
+  border:1px solid $clr-gray;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 15px 30px;
+  .url-container_result{
+    display: flex;
+    align-items: center;
+  }
+  .origin-Url{
+    width:60%;
+  }
+  div{
+    
+    a{
+      text-decoration: none;
+      color:$clr-skyBlue;
+    }
+    a:hover{
+      color:$clr-black;
+    }
+    button{
+      background: $clr-skyBlue;
+      color: $clr-white;
+      border:none;
+      width: 130px;
+      font-size: 1.3rem;
+      border-radius: 15px;
+      cursor: pointer;
+      margin-left: 15px;
+    }
+    button:hover{
+      @extend .buttonStyleClass;
+    }
   }
 }

@@ -13,7 +13,8 @@
 @media (min-width: 1355px){
   body{
     .section-Principal{
-      height: 93vh;
+      min-height: 93vh;
+      height: auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -55,6 +56,9 @@ header {
           margin-inline: 10px;
           color: $clr-black;
         }
+        a:hover{
+          color:$clr-skyBlue;
+        }
       }
 
       .nav-menu_login {
@@ -64,6 +68,10 @@ header {
         margin:0;
         .nav-menu_SingUp{
           color:$clr-white;
+        }
+        .nav-menu_SingUp:hover {
+          background:$clr-purple;
+          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
         }
       }
     }
