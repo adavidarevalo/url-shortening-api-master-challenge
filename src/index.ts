@@ -14,6 +14,7 @@ let buttonLoader: Element = document.querySelector("#buttonLoader")
 let mainMessageError = document.querySelector("#mainMessageError")
 
 mainButtonUrl.addEventListener("click", ()=>{
+  notError();
   if(mainInputUrl.value == ""){
     errorMessage()
   } else {
@@ -77,5 +78,11 @@ function errorMessage() {
   mainInputUrl.style=`border: 1px solid red;`
     mainMessageError.innerHTML=`
     <p>You need to review your url. Try again</p>
+    `
+}
+function notError(){
+  mainInputUrl.style=`border: none;`
+    mainMessageError.innerHTML=`
+    <p></p>
     `
 }
