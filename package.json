@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
-    "dev": "webpack --mode deveplo"
+    "dev": "webpack --mode development",
+    "start": "webpack serve --mode development --open"
   },
   "keywords": [
     "Practice"
@@ -14,6 +15,8 @@
   "author": "David Arevalo <davidarevaloc20@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "copy-webpack-plugin": "^9.0.0",
+    "svg-url-loader": "^7.1.1",
     "typescript": "^4.3.2"
   },
   "devDependencies": {

@@ -1,3 +1,4 @@
+import "./style.css";
 // header
 var menuButton = document.querySelector(".fa-bars");
 var navMenu = document.querySelector("#navMenu");
@@ -13,6 +14,7 @@ var mainShortenResult = document.querySelector("#mainShortenResult");
 var buttonLoader = document.querySelector("#buttonLoader");
 var mainMessageError = document.querySelector("#mainMessageError");
 mainButtonUrl.addEventListener("click", function () {
+    notError();
     if (mainInputUrl.value == "") {
         errorMessage();
     }
@@ -30,8 +32,7 @@ function checkUrl(url) {
         urlFetch(makeApi);
         buttonLoader.innerHTML = "\n    <img class=\"button-loader\" src=\"https://acegif.com/wp-content/uploads/loading-11.gif\" alt=\"loader git\">\n    ";
         //delete error message
-        mainInputUrl.style = "border: none;";
-        mainMessageError.innerHTML = "";
+        notError();
     }
 }
 function urlFetch(url) {
@@ -57,4 +58,8 @@ function apiError(data) {
 function errorMessage() {
     mainInputUrl.style = "border: 1px solid red;";
     mainMessageError.innerHTML = "\n    <p>You need to review your url. Try again</p>\n    ";
+}
+function notError() {
+    mainInputUrl.style = "border: none;";
+    mainMessageError.innerHTML = "\n    <p></p>\n    ";
 }

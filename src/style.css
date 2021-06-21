@@ -156,7 +156,7 @@ main .main-fistPart button {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 15px;
-  background: url(./source/images/bg-boost-mobile.svg);
+  background: url(https://images.vexels.com/media/users/3/208473/isolated/preview/be23697f110c07117197e0697d7ecdf3-piso-peque-ntilde-o-coche-gris-by-vexels.png);
   background-size: cover;
   border-radius: 10px;
   -webkit-box-pack: center;
@@ -172,7 +172,7 @@ main .main-fistPart button {
   font-size: 1rem;
   padding: 8px 10px;
   width: 100%;
-  max-width: 500px;
+  max-width: 650px;
 }
 .main-shorten .main-shorten_container div button {
   margin-top: 10px;
@@ -242,7 +242,7 @@ main .main-fistPart button {
   height: 30vh;
 }
 .main-boots div {
-  background: url(./source/images/bg-boost-mobile.svg);
+  background: url(https://images.vexels.com/media/users/3/208473/isolated/preview/be23697f110c07117197e0697d7ecdf3-piso-peque-ntilde-o-coche-gris-by-vexels.png);
   background-size: cover;
   height: 30vh;
   display: -webkit-box;

@@ -1,3 +1,4 @@
+import "./style.css";
 // header
 const menuButton:Element = document.querySelector(".fa-bars")
 const navMenu = document.querySelector("#navMenu")
@@ -33,8 +34,7 @@ function checkUrl(url:string | any) {
     <img class="button-loader" src="https://acegif.com/wp-content/uploads/loading-11.gif" alt="loader git">
     `
     //delete error message
-    mainInputUrl.style=`border: none;`
-    mainMessageError.innerHTML=``
+    notError();
   }
 }
 
