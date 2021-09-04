@@ -30,7 +30,13 @@ function checkUrl(url) {
     else if (url.includes(".")) {
         var makeApi = "" + Api + url;
         urlFetch(makeApi);
-        buttonLoader.innerHTML = "\n    <img class=\"button-loader\" src=\"https://acegif.com/wp-content/uploads/loading-11.gif\" alt=\"loader git\">\n    ";
+        buttonLoader.innerHTML = `
+        <div class="lds-facebook">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        `;
         //delete error message
         notError();
     }
@@ -40,10 +46,21 @@ function urlFetch(url) {
         .then(function (response) { return response.json(); })
         .then(function (data) { return templateResult(data.result.short_link); })["catch"](function (err) { return apiError(err); });
 }
+const CopyText = () =>{
+    alert('Yes Baby')
+}
 function templateResult(data) {
     console.log(data);
     var infoDiv = document.createElement("div");
-    infoDiv.innerHTML = "\n  <div class=\"main-url_container\">\n    <div class=\"origin-Url\">\n      <p class=\"displayNone\">" + mainInputUrl.value + "</p>\n    </div>\n    <div class=\"url-container_result\">\n      <a href=\"https://" + data + "\" target=\"_blank\" class=\"main-url\">" + data + "</a>\n      <button id=\"urlCopy\">Copy</button>\n    </div>\n  </div>\n  ";
+    infoDiv.innerHTML = `<div class="main-url_container">
+                            <div class="origin-Url">
+                                <p class="displayNone">${mainInputUrl.value}</p>
+                            </div>
+                            <div class="url-container_result">
+                                <a href="https://${data}" target="_blank" class="main-url">${data}</a>    
+                                <button id="urlCopy" onclick="{navigator.clipboard.writeText('${data}')}">Copy</button>    
+                            </div>  
+                        </div>  `;
     mainShortenResult.append(infoDiv);
     buttonLoader.innerHTML = "";
     mainInputUrl.value = "";
